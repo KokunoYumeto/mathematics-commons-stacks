@@ -1,0 +1,9 @@
+{
+  "$schema": "../schemas/overlay-entry.schema.json",
+  "schema": "mathematics-commons-stacks-overlay-registry/v1",
+  "upstream_lock": "upstream/stacks.lock.json",
+  "namespace_root": "commons/stacks",
+  "one_writer_per_ancestor_chain": true,
+  "registered_entries": []
+}
+

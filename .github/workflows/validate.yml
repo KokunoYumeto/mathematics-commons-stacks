@@ -1,0 +1,40 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate bound empty state
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          for path in sorted(Path('.').rglob('*.json')):
+              json.loads(path.read_text(encoding='utf-8'))
+
+          lock = json.loads(Path('upstream/stacks.lock.json').read_text(encoding='utf-8'))
+          assert lock['commit'] == 'a04446e57ec1fbc252a871afcec7752fb2807b14'
+          assert lock['tree'] == '3feeb703b931a6e7259782c10e7d1575adc83e5e'
+          assert lock['license']['sha256'] == '4B2C8FC390F802CD92F0622DC00A708A588BEC54D0145D2EE135D6D7672BFE85'
+          assert lock['endorsement']['claimed'] is False
+
+          overlays = json.loads(Path('registry/overlays.json').read_text(encoding='utf-8'))
+          locales = json.loads(Path('registry/locales.json').read_text(encoding='utf-8'))
+          releases = json.loads(Path('registry/releases.json').read_text(encoding='utf-8'))
+          assert overlays['registered_entries'] == []
+          assert locales['admitted_locales'] == []
+          assert releases['releases'] == []
+
+          forbidden = list(Path('.').rglob('*.tex')) + list(Path('.').rglob('*.pdf'))
+          assert not forbidden, f'unexpected upstream or build payload: {forbidden}'
+          print('validated exact Stacks pin and empty sidecar state')
+          PY
