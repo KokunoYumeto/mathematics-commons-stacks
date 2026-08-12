@@ -17,12 +17,20 @@ translation and source-integration tasks do not write those branches directly.
 - Upstream licence text: GNU Free Documentation License 1.2, identified by
   [`upstream/stacks.lock.json`](upstream/stacks.lock.json)
 - Registered overlays: **zero**
+- Active candidate-namespace leases: **three** (`fac`, `tohoku`, `gaga`),
+  all held by task `019fca5a-c29e-7330-acdc-c93f4a3dc9fb`
 - Imported historical integration branches: **zero**
 - Generated editions or builds: **zero**
 
 Existing mutable FGA, EGA, FAC, Tôhoku, and GAGA branches are deliberately not
 imported. Each must first become a manifest-complete candidate with its own
 stable IDs, provenance, decisions, tests, and review evidence.
+
+Namespace leases are reservations, not mathematical or release admission. See
+[`registry/leases.json`](registry/leases.json) and the candidate contract in
+[`candidates/CONTRACT.md`](candidates/CONTRACT.md). A source-integration owner
+may write only its leased candidate path. It may not modify the literal mirror,
+locale trees, the overlay registry, or generated releases.
 
 ## Edition label
 
@@ -34,4 +42,3 @@ Every public output must state prominently:
 
 “Stacks Project” identifies the upstream source. “Mathematics Commons” identifies
 the independent producer.
-
