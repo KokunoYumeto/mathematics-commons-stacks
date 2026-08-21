@@ -17,8 +17,10 @@ translation and source-integration tasks do not write those branches directly.
 - Upstream licence text: GNU Free Documentation License 1.2, identified by
   [`upstream/stacks.lock.json`](upstream/stacks.lock.json)
 - Registered overlays: **zero**
-- Active candidate-namespace leases: **three** (`fac`, `tohoku`, `gaga`),
-  all held by task `019fca5a-c29e-7330-acdc-c93f4a3dc9fb`
+- Active candidate-namespace leases: **four** (`fac`, `tohoku`, `gaga`,
+  `errata`). The first three are held by task
+  `019fca5a-c29e-7330-acdc-c93f4a3dc9fb`; `errata` is held by canon task
+  `01a0256d-5693-77c1-96b2-cf37101e0c6c`.
 - Imported historical integration branches: **zero**
 - Generated editions or builds: **zero**
 
