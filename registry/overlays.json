@@ -4,6 +4,33 @@
   "upstream_lock": "upstream/stacks.lock.json",
   "namespace_root": "commons/stacks",
   "one_writer_per_ancestor_chain": true,
-  "registered_entries": []
+  "registered_entries": [
+    {
+      "id": "stacks-errata-a04446e-r1",
+      "namespace": "commons/stacks/errata",
+      "writer": "01a0256d-5693-77c1-96b2-cf37101e0c6c",
+      "source_commit": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+      "source_tree": "3feeb703b931a6e7259782c10e7d1575adc83e5e",
+      "manifest_sha256": "0715131E7A35EDC65A18183B3A6422A45D4A0AD3319DA20F9D761C58DE0F086D",
+      "stable_ids": [
+        "MC-STK-ERR-0001",
+        "MC-STK-ERR-0002",
+        "MC-STK-ERR-0003",
+        "MC-STK-ERR-0005",
+        "MC-STK-ERR-0006",
+        "MC-STK-ERR-0007",
+        "MC-STK-ERR-0008",
+        "MC-STK-ERR-0009",
+        "MC-STK-ERR-0010",
+        "MC-STK-ERR-0011",
+        "MC-STK-ERR-0012",
+        "MC-STK-ERR-0013",
+        "MC-STK-ERR-0014",
+        "MC-STK-ERR-0015"
+      ],
+      "rights_state": "Upstream and modified payload retain GNU Free Documentation License 1.2; candidate metadata does not relicense upstream content; independently maintained AI-produced work with no Stacks Project review, approval, affiliation, or endorsement.",
+      "review_receipt": "candidates/commons/stacks/errata/replay/independent-review.json",
+      "admitted_at_utc": "2026-08-21T21:06:37Z"
+    }
+  ]
 }
-

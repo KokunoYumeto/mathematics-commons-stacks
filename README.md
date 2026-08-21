@@ -16,7 +16,9 @@ translation and source-integration tasks do not write those branches directly.
 - Tree: `3feeb703b931a6e7259782c10e7d1575adc83e5e`
 - Upstream licence text: GNU Free Documentation License 1.2, identified by
   [`upstream/stacks.lock.json`](upstream/stacks.lock.json)
-- Registered overlays: **zero**
+- Registered overlays: **one** (`stacks-errata-a04446e-r1`), admitted from
+  the manifest-complete `commons/stacks/errata` candidate after independent
+  replay.
 - Active candidate-namespace leases: **four** (`fac`, `tohoku`, `gaga`,
   `errata`). The first three are held by task
   `019fca5a-c29e-7330-acdc-c93f4a3dc9fb`; `errata` is held by canon task
