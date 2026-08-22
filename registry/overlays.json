@@ -31,6 +31,32 @@
       "rights_state": "Upstream and modified payload retain GNU Free Documentation License 1.2; candidate metadata does not relicense upstream content; independently maintained AI-produced work with no Stacks Project review, approval, affiliation, or endorsement.",
       "review_receipt": "candidates/commons/stacks/errata/replay/independent-review.json",
       "admitted_at_utc": "2026-08-21T21:06:37Z"
+    },
+    {
+      "id": "stacks-errata-a04446e-r2",
+      "namespace": "commons/stacks/errata/r2",
+      "writer": "01a0256d-5693-77c1-96b2-cf37101e0c6c",
+      "source_commit": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+      "source_tree": "3feeb703b931a6e7259782c10e7d1575adc83e5e",
+      "manifest_sha256": "449C8515B1DA6F1334DB524F75D819926996DA4FCFE2C50B362EB25C5CA8473B",
+      "stable_ids": [
+        "MC-STK-ERR-0016",
+        "MC-STK-ERR-0017",
+        "MC-STK-ERR-0018",
+        "MC-STK-ERR-0019",
+        "MC-STK-ERR-0020",
+        "MC-STK-ERR-0021",
+        "MC-STK-ERR-0022",
+        "MC-STK-ERR-0023",
+        "MC-STK-ERR-0024",
+        "MC-STK-ERR-0025",
+        "MC-STK-ERR-0026",
+        "MC-STK-ERR-0027",
+        "MC-STK-ERR-0028"
+      ],
+      "rights_state": "Upstream and modified payload retain GNU Free Documentation License 1.2; candidate metadata does not relicense upstream content; independently maintained AI-produced work with no Stacks Project review, approval, affiliation, or endorsement.",
+      "review_receipt": "candidates/commons/stacks/errata/r2/replay/independent-review.json",
+      "admitted_at_utc": "2026-08-22T01:06:21Z"
     }
   ]
 }
