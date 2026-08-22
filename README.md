@@ -1,13 +1,19 @@
-# Mathematics Commons — Stacks sidecar
+# Stacks — English AI Edition
 
-This is the independent control, overlay, translation, and release sidecar for
-AI-produced Stacks-derived editions. It is paired with the literal GitHub fork
-at <https://github.com/KokunoYumeto/stacks-project>.
+This repository maintains the independent English AI edition of Stacks: proved
+source errata, exact correction overlays, deterministic composition records,
+build evidence, and release provenance. It is paired with the literal GitHub
+fork at <https://github.com/KokunoYumeto/stacks-project>.
 
-The fork's `master` branch remains an exact upstream mirror. This sidecar owns
-only Commons namespaces and deterministic composition records. Generated
-edition branches may later be written to the fork by a dedicated composer, but
-translation and source-integration tasks do not write those branches directly.
+The fork's `master` branch remains an exact upstream mirror. This repository
+owns only independently proved AI-edition overlays and deterministic
+composition records. Generated English-edition branches may later be written
+to the fork by a dedicated composer, but translation and source-integration
+tasks do not write those branches directly.
+
+Simplified Chinese, Japanese, and Korean are separate editions. Each receives
+its own GitHub repository and Zenodo concept/version lineage; their release
+artifacts are not presented as branches or variants of this English edition.
 
 ## Bound state
 
@@ -44,5 +50,5 @@ Every public output must state prominently:
 > Project authors and maintainers have not requested, reviewed, approved, or
 > endorsed this edition.
 
-“Stacks Project” identifies the upstream source. “Mathematics Commons” identifies
-the independent producer.
+“Stacks Project” identifies the upstream source. “English AI Edition” identifies
+this independent edition and does not imply upstream affiliation or endorsement.
